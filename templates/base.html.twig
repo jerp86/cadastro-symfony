@@ -3,11 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        {% endblock %}
     </head>
     <body>
-        {% block topo %}{% endblock %}
-        {% block body %}{% endblock %}
+        {% block topo %}
+            <div class="topo">
+                <img src="{{ asset('img/logo-dio.png') }}">
+            </div>
+        {% endblock %}
+        {% block body %}
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>
