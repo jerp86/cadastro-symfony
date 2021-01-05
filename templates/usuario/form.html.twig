@@ -14,9 +14,11 @@
 
 {# formulário de cadastro de usuário #}
 {% block body %}
-  <form method="POST" action="{{ url('web_usuario_salvar') }}>
-    <input type="text" name="nome" placeholder="Nome">
-    <input type="email" name="email" placeholder="E-mail">
+  <form method="POST" action="{{ url('web_usuario_salvar') }}">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome" />
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu melhor E-mail" />
 
     <button type="submit">Salvar</button>
   </form>
